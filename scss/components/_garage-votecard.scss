@@ -1,0 +1,42 @@
+.garage-votecard {
+    padding: 16px;
+    background: linear-gradient(90deg, #004680 0%, #4484ba 100%);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // .garage-votecard__title
+    &__title {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 141%;
+
+        letter-spacing: -0.3px;
+
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
+
+    // .garage-votecard__form
+    &__form {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    // .garage-votecard__statistics
+    &__statistics {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+
+        letter-spacing: -0.3px;
+
+        color: #ffffff;
+    }
+}

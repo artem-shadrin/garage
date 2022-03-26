@@ -1,0 +1,25 @@
+.garage-setting-button {
+	width: 343px;
+
+	background: $grey-1;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	padding-left: 12px;
+	&__label {
+		line-height: 0%;
+		margin-right: 12px;
+	}
+	&__caption {
+		flex: 1 1 auto;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 141%;
+
+		letter-spacing: -0.3px;
+
+		color: #000000;
+	}
+}

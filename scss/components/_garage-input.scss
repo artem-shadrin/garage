@@ -1,0 +1,59 @@
+.garage-field {
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    max-width: 343px;
+    // .garage-input__field
+    &__input {
+        border: 1px solid #ededed;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 14px 12px;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        /* identical to box height, or 141% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.3px;
+
+        color: #000000;
+    }
+    &__input:not(:placeholder-shown) + &__label,
+    &__input:focus + &__label {
+        top: 0;
+        left: 0;
+
+        font-size: 15px;
+        line-height: 160%;
+
+        color: $grey-2;
+    }
+    // .garage-input__label
+    &__label {
+        position: absolute;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 141%;
+        letter-spacing: -0.3px;
+        color: #878787;
+        top: 50%;
+        left: 12px;
+        transition: 0.2s;
+    }
+
+    &--error > &__input {
+        border: 1px solid $red;
+        color: $red;
+    }
+    &--valid > &__input {
+        border: 1px solid $green;
+    }
+}

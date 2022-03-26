@@ -1,0 +1,67 @@
+.garage-variant {
+	width: 100%;
+	max-width: 311px;
+	border-radius: 12px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.25);
+	border: 1px solid transparent;
+	position: relative;
+	& + & {
+		margin-top: 8px;
+	}
+	&__indicator {
+		width: 20px;
+		height: 20px;
+		border: 1px solid #ffffff;
+		border-radius: 100%;
+		position: absolute;
+		left: 8px;
+		pointer-events: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__pecent {
+		display: none;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 24px;
+		/* identical to box height, or 160% */
+
+		letter-spacing: -0.3px;
+		margin-right: 8px;
+		color: #ffffff;
+	}
+	&__text {
+		font-family: "SF Pro Display";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		text-align: left;
+		line-height: 160%;
+		letter-spacing: -0.3px;
+		color: #ffffff;
+		padding: 8px;
+		padding-left: 36px;
+		width: 100%;
+	}
+	&:disabled {
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		background: transparent;
+	}
+	&:disabled &__indicator {
+		display: none;
+	}
+	&:disabled &__text {
+		padding-left: 8px;
+	}
+	&:disabled &__pecent {
+		display: inline;
+	}
+	&--select {
+		background: rgba(255, 255, 255, 0.25) !important;
+		border: 1px solid transparent !important;
+	}
+}
