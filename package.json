@@ -1,0 +1,22 @@
+{
+  "name": "garage",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artem-shadrin/garage.git"
+  },
+  "author": "Shadrin A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artem-shadrin/garage/issues"
+  },
+  "homepage": "https://github.com/artem-shadrin/garage#readme"
+}

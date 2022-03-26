@@ -1,0 +1,123 @@
+.auth {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__content {
+        width: 200%;
+        display: flex;
+        &--sms-code {
+            transform: translate(-50%, 0);
+        }
+    }
+    &__block {
+        width: 50%;
+    }
+    &__form {
+        margin-bottom: 24px;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__back-button {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+        background: #f8f8f8;
+        border-radius: 12px;
+        color: $active-blue;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link {
+        margin: 0 auto;
+        text-align: center;
+        &--hidden {
+            z-index: -1;
+            opacity: 0;
+            position: absolute;
+            visibility: hidden;
+        }
+    }
+}
+.form-login {
+    &__tel {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+}
+.sms-code {
+    display: flex;
+    flex-direction: column;
+    &__subtitle {
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+    &__input {
+        width: 40px;
+        height: 56px;
+        background: $grey-1;
+        border-radius: 12px;
+        border: none;
+
+        padding: 16px 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        /* identical to box height, or 141% */
+
+        letter-spacing: -0.3px;
+
+        color: #000000;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+    &__timer {
+        display: block;
+        text-align: center;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+
+        letter-spacing: -0.3px;
+
+        color: #939393;
+        &--hidden {
+            z-index: -1;
+            opacity: 0;
+            position: absolute;
+            visibility: hidden;
+        }
+    }
+}
+.registration {
+    &__subtitle {
+        margin-bottom: 8px;
+    }
+}
+.form-registration {
+    &__input {
+        & + & {
+            margin-top: 22px;
+        }
+    }
+}
