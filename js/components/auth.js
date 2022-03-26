@@ -1,5 +1,6 @@
 const auth = () => {
     const correctPhone = () => {
+        const containerEl = document.querySelector('.auth__content');
         const phoneEl = document.getElementById('form-login');
         const phoneValueEl = document.getElementById('login__phone');
         const phoneBtnEl = document.getElementById('login__submit');
@@ -46,7 +47,8 @@ const auth = () => {
         phoneEl.onsubmit = function (e) {
             e.preventDefault()
             const phone = phoneValueEl.value.replace(/\-|\(|\)|\+/g, '');
-            console.log(phone.replace(/\-|\(|\)|\+/g, ''));
+            console.log(phone);
+            containerEl?.classList.add('auth__content--sms-code');
         }
     }
     correctPhone()
