@@ -2,102 +2,109 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<title>Document</title>
 </head>
 
 <body>
-    <section class="auth">
-        <div class="container">
-            <div class="auth__content">
-                <div class="auth__block">
-                    <div class="login">
-                        <h2 class="section__title auth__title">Авторизация</h2>
-                        <div class="auth__form">
-                            <form class="form-login" action="" method="post" id="form-login">
-                                <div class="form-login__tel">
-                                    <div class="garage-field">
-                                        <input type="tel" class="garage-field__input" name="login__phone"
-                                            id="login__phone" placeholder=" " value="+7">
-                                        <label for="login__phone" class="garage-field__label">Номер телефона</label>
-                                    </div>
-                                </div>
-                                <div class="form-login__submit">
-                                    <button class="garage-button" disabled id="login__submit">
-                                        <div class="garage-button__caption">Продолжить</div>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="auth__text">У вас еще нет аккаунта? <a href="" class="auth__link">Создать
-                                аккаунт</a>
-                        </div>
-                    </div>
-                    <div class="registration is-hidden">
-                        <button class="auth__back-button">
-                            <svg class="i-icon i-icon--md">
-                                <use xlink:href="../icons/sprite.svg#ic_arrowback"></use>
-                            </svg>
-                        </button>
-                        <h2 class="section__title registration__title">Регистрация</h2>
-                        <span class="section__subtitle registration__subtitle">
-                            Для регистрации укажите ФИО и номер телефона
-                        </span>
-                        <form action="" class="form-registration">
-                            <div class="form-registration__input">
-                                <div class="garage-field">
-                                    <input type="text" class="garage-field__input" name="registration__name"
-                                        id="registration__name" placeholder=" ">
-                                    <label for="registration__name" class="garage-field__label">ФИО</label>
-                                </div>
-                            </div>
-                            <div class="form-registration__input">
-                                <div class="garage-field">
-                                    <input type="text" class="garage-field__input" name="registration__tel"
-                                        id="registration__tel" placeholder=" " value="+7">
-                                    <label for="registration__tel" class="garage-field__label">Номер телефона</label>
-                                </div>
-                            </div>
-                            <button class="garage-button" disabled>
-                                <div class="garage-button__caption">Продолжить</div>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div class="auth__block">
-                    <button class="auth__back-button">
-                        <svg class="i-icon i-icon--md">
-                            <use xlink:href="../icons/sprite.svg#ic_arrowback"></use>
-                        </svg>
-                    </button>
-                    <div class="sms-code">
-                        <h2 class="section__title sms-code__title">Введите код из SMS</h2>
-                        <span class="section__subtitle sms-code__subtitle">
-                            Код отправлен на номер +7 (000) 000-**-**
-                        </span>
-                        <form action="" class="sms-code__form">
-                            <input type="number" name="sms-code" id="sms-code-1" class="sms-code__input">
-                            <input type="number" name="sms-code" id="sms-code-1" class="sms-code__input">
-                            <input type="number" name="sms-code" id="sms-code-1" class="sms-code__input">
-                            <span>&mdash;</span>
-                            <input type="number" name="sms-code" id="sms-code-1" class="sms-code__input">
-                            <input type="number" name="sms-code" id="sms-code-1" class="sms-code__input">
-                            <input type="number" name="sms-code" id="sms-code-1" class="sms-code__input">
-                        </form>
-                        <span class="sms-code__timer sms-code__timer--hidden">
-                            Запросить код снова можно через
-                            <span class="sms-code__timer-value">0:48</span>
-                        </span>
-                        <a href="" class="auth__link">Отправить код повторно</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script type="module" src="../js/script.js"></script>
+	<section class="auth">
+		<div class="container">
+			<div class="auth__content">
+				<div class="auth__block">
+					<div class="login">
+						<h2 class="section__title auth__title">Авторизация</h2>
+						<div class="auth__form">
+							<form class="form-login" action="" method="post" id="form-login">
+								<div class="form-login__tel">
+									<div class="garage-field">
+										<input type="tel" class="garage-field__input" name="login__phone" id="login__phone" placeholder=" "
+											value="+7">
+										<label for="login__phone" class="garage-field__label">Номер телефона</label>
+									</div>
+								</div>
+								<div class="form-login__submit">
+									<button class="garage-button" disabled id="login__submit">
+										<div class="garage-button__caption">Продолжить</div>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="auth__text">У вас еще нет аккаунта? <a href="" class="auth__link"
+								id="link__registration">Создать
+								аккаунт</a>
+						</div>
+					</div>
+					<div class="registration is-hidden">
+						<button class="auth__back-button">
+							<svg class="i-icon i-icon--md">
+								<use xlink:href="../icons/sprite.svg#ic_arrowback"></use>
+							</svg>
+						</button>
+						<h2 class="section__title registration__title">Регистрация</h2>
+						<span class="section__subtitle registration__subtitle">
+							Для регистрации укажите ФИО и номер телефона
+						</span>
+						<form action="" class="form-registration" id="form-registration">
+							<div class="form-registration__input">
+								<div class="garage-field">
+									<input type="text" class="garage-field__input" name="registration__name" id="registration__name"
+										placeholder=" ">
+									<label for="registration__name" class="garage-field__label">ФИО</label>
+								</div>
+							</div>
+							<div class="form-registration__input">
+								<div class="garage-field">
+									<input type="text" class="garage-field__input" name="registration__phone" id="registration__phone"
+										placeholder=" " value="+7">
+									<label for="registration__phone" class="garage-field__label">Номер телефона</label>
+								</div>
+							</div>
+							<button class="garage-button" disabled id="registration__submit">
+								<div class="garage-button__caption">Продолжить</div>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="auth__block">
+					<button class="auth__back-button">
+						<svg class="i-icon i-icon--md">
+							<use xlink:href="../icons/sprite.svg#ic_arrowback"></use>
+						</svg>
+					</button>
+					<div class="sms-code">
+						<h2 class="section__title sms-code__title">Введите код из SMS</h2>
+						<span class="section__subtitle sms-code__subtitle">
+							Код отправлен на номер <span class="sms-code__tel"></span>
+						</span>
+						<form action="" class="sms-code__form">
+							<input type="number" name="sms-code" id="sms-code-1" class="sms-code__input" max="9" min="0"
+								maxlength="1">
+							<input type="number" name="sms-code" id="sms-code-2" class="sms-code__input" max="9" min="0"
+								maxlength="1">
+							<input type="number" name="sms-code" id="sms-code-3" class="sms-code__input" max="9" min="0"
+								maxlength="1">
+							<span>&mdash;</span>
+							<input type="number" name="sms-code" id="sms-code-4" class="sms-code__input" max="9" min="0"
+								maxlength="1">
+							<input type="number" name="sms-code" id="sms-code-5" class="sms-code__input" max="9" min="0"
+								maxlength="1">
+							<input type="number" name="sms-code" id="sms-code-6" class="sms-code__input" max="9" min="0"
+								maxlength="1">
+						</form>
+						<span class="sms-code__timer sms-code__timer--hidden">
+							Запросить код снова можно через
+							<span class="sms-code__timer-value">0:48</span>
+						</span>
+						<a href="" class="auth__link">Отправить код повторно</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="module" src="../js/script.js"></script>
 </body>
 
 </html>
