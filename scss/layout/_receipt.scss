@@ -1,0 +1,95 @@
+.payment {
+  padding-top: 72px;
+  padding-bottom: 32px;
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    /* identical to box height, or 145% */
+
+    letter-spacing: -0.3px;
+
+    color: #000000;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    margin-bottom: 8px;
+  }
+
+  &__btn {
+    margin-bottom: 16px;
+  }
+}
+.payment-card {
+  padding: 16px;
+  margin-bottom: 8px;
+  background: $grey-1;
+  border-radius: 12px;
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 141%;
+    /* identical to box height, or 141% */
+
+    letter-spacing: -0.3px;
+
+    color: #000000;
+  }
+
+  &__list {
+    padding: 0;
+    margin-left: 16px;
+  }
+
+  &__item {
+    & + & {
+      margin-top: 8px;
+    }
+  }
+  &__value {
+    font-weight: 600;
+  }
+}
+.payment-load {
+  &__btn {
+    margin-top: 8px;
+  }
+}
+
+.indications {
+  &--details {
+    padding-top: 56px;
+  }
+  padding-bottom: 169px;
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    /* identical to box height, or 145% */
+
+    text-align: center;
+    letter-spacing: -0.3px;
+    margin-bottom: 8px;
+    &--left {
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+    margin-bottom: 24px;
+    letter-spacing: -0.3px;
+
+    color: #939393;
+  }
+  &__btn {
+    margin-top: 32px;
+  }
+}

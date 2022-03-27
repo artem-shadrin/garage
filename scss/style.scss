@@ -4,21 +4,6 @@
 @import "./icons";
 @import "./base/base";
 
-// Components
-@import "./components/garage-button";
-@import "./components/garage-input";
-@import "./components/garage-setting-button";
-@import "./components/garage-navigation";
-@import "./components/garage-variant";
-@import "./components/garage-votecard";
-
-// Layouts
-@import "./layout/auth";
-@import "./layout/cameras";
-@import "./layout/hero";
-@import "./layout/indications";
-@import "./layout/profile";
-
 .section {
     &__title {
         font-family: "SF Pro Display";
@@ -42,4 +27,31 @@
 
         color: #939393;
     }
+    &__back-button {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+        background: #f8f8f8;
+        border-radius: 12px;
+        color: $active-blue;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+// Components
+@import "./components/garage-button";
+@import "./components/garage-input";
+@import "./components/garage-setting-button";
+@import "./components/garage-navigation";
+@import "./components/garage-variant";
+@import "./components/garage-votecard";
+
+// Layouts
+@import "./layout/auth";
+@import "./layout/cameras";
+@import "./layout/hero";
+@import "./layout/receipt";
+@import "./layout/profile";

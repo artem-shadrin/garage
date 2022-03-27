@@ -5,8 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	border: none;
-
+	border: 1px solid transparent;
 	background: $active-blue;
 	border-radius: 12px;
 	&__caption {
@@ -19,5 +18,12 @@
 	}
 	&:disabled {
 		background: $disable-blue;
+	}
+	&--transparent {
+		background: none;
+		border: 1px solid $active-blue;
+	}
+	&--transparent &__caption {
+		color: $active-blue;
 	}
 }

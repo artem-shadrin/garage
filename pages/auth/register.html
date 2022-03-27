@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../styles/styles.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<section class="authorization">
+		<div class="container">
+			<div class="registration is-hidden">
+				<button class="section__back-button">
+					<svg class="i-icon i-icon--md">
+						<use xlink:href="../icons/sprite.svg#ic_arrowback"></use>
+					</svg>
+				</button>
+				<h2 class="section__title registration__title">Регистрация</h2>
+				<span class="section__subtitle registration__subtitle">
+					Для регистрации укажите ФИО и номер телефона
+				</span>
+				<form action="" class="form-registration" id="form-registration">
+					<div class="form-registration__input">
+						<div class="garage-field">
+							<input type="text" class="garage-field__input" name="registration__name" id="registration__name"
+								placeholder=" ">
+							<label for="registration__name" class="garage-field__label">ФИО</label>
+						</div>
+					</div>
+					<div class="form-registration__input">
+						<div class="garage-field">
+							<input type="text" class="garage-field__input" name="registration__phone" id="registration__phone"
+								placeholder=" " value="+7">
+							<label for="registration__phone" class="garage-field__label">Номер телефона</label>
+						</div>
+					</div>
+					<button class="garage-button" disabled id="registration__submit">
+						<div class="garage-button__caption">Продолжить</div>
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

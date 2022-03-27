@@ -1,5 +1,6 @@
 .garage-navigation {
     padding: 14px 25px 27px;
+    color: $grey-2;
     &__list {
         list-style: none;
         padding: 0;
@@ -7,9 +8,14 @@
         display: flex;
         justify-content: space-between;
     }
+    &__item {
+        &--active {
+            color: $active-blue;
+        }
+    }
 }
 .garage-link {
-    color: $grey-2;
+    color: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,8 +28,5 @@
         line-height: 160%;
         text-align: center;
         letter-spacing: -0.3px;
-    }
-    &--active {
-        color: $active-blue;
     }
 }

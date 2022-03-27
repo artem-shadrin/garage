@@ -143,10 +143,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-transform: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   padding: 0;
   margin: 0;
-  background: #e5e5e5;
   font-family: "SF Pro Display";
 }
 
@@ -176,7 +181,6 @@ h6 {
 .container {
   max-width: 343px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .is-hidden {
@@ -188,6 +192,48 @@ h6 {
   position: absolute;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+
+.section__title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  /* identical to box height, or 114% */
+  margin-bottom: 8px;
+  color: #000000;
+}
+.section__subtitle {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  letter-spacing: -0.3px;
+  color: #939393;
+}
+.section__back-button {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  color: #2376f2;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .garage-button {
   width: 343px;
   height: 56px;
@@ -195,7 +241,7 @@ h6 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: none;
+  border: 1px solid transparent;
   background: #2376f2;
   border-radius: 12px;
 }
@@ -209,6 +255,13 @@ h6 {
 }
 .garage-button:disabled {
   background: #91baf9;
+}
+.garage-button--transparent {
+  background: none;
+  border: 1px solid #2376f2;
+}
+.garage-button--transparent .garage-button__caption {
+  color: #2376f2;
 }
 
 .garage-field {
@@ -290,6 +343,7 @@ h6 {
 
 .garage-navigation {
   padding: 14px 25px 27px;
+  color: #878787;
 }
 .garage-navigation__list {
   list-style: none;
@@ -298,9 +352,12 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+.garage-navigation__item--active {
+  color: #2376f2;
+}
 
 .garage-link {
-  color: #878787;
+  color: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,9 +371,6 @@ h6 {
   line-height: 160%;
   text-align: center;
   letter-spacing: -0.3px;
-}
-.garage-link--active {
-  color: #2376f2;
 }
 
 .garage-variant {
@@ -419,12 +473,6 @@ h6 {
   color: #ffffff;
 }
 
-.auth {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
 .auth__content {
   width: 200%;
   display: flex;
@@ -436,24 +484,8 @@ h6 {
 .auth__block {
   width: 50%;
 }
-.auth__form {
-  margin-bottom: 24px;
-}
 .auth__text {
   text-align: center;
-}
-.auth__back-button {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 24px;
-  background: #f8f8f8;
-  border-radius: 12px;
-  color: #2376f2;
-  border: none;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .auth__link {
   margin: 0 auto;
@@ -530,26 +562,159 @@ h6 {
 .form-registration__input + .form-registration__input {
   margin-top: 22px;
 }
+.form-registration__input:last-child {
+  margin-bottom: 32px;
+}
 
-.section__title {
+.cameras {
+  padding-top: 72px;
+  padding-bottom: 86px;
+}
+.cameras--play {
+  padding-top: 56px;
+  padding-bottom: 0;
+}
+.cameras__title {
+  margin-bottom: 16px;
+}
+.cameras__item + .cameras__item {
+  margin-top: 16px;
+}
+.cameras hr {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.camera-card__title {
   font-family: "SF Pro Display";
   font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 32px;
-  /* identical to box height, or 114% */
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141%;
+  letter-spacing: -0.3px;
+  color: #000000;
   margin-bottom: 8px;
+}
+.camera-card__video {
+  width: 343px;
+  height: 144px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+}
+.camera-card__video img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.camera-primary__video {
+  width: 343px;
+  height: 248px;
+  overflow: hidden;
+  background: #989898;
+  border-radius: 12px;
+}
+.camera-primary__video img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.camera-primary__title {
+  margin: 16px 0;
+  text-align: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+  text-align: center;
+  letter-spacing: -0.3px;
   color: #000000;
 }
-.section__subtitle {
-  display: inline-block;
+
+.payment {
+  padding-top: 72px;
+  padding-bottom: 32px;
+}
+.payment__title {
   font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.payment__info {
+  margin-bottom: 8px;
+}
+.payment__btn {
+  margin-bottom: 16px;
+}
+
+.payment-card {
+  padding: 16px;
+  margin-bottom: 8px;
+  background: #f8f8f8;
+  border-radius: 12px;
+}
+.payment-card__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 141%;
+  /* identical to box height, or 141% */
+  letter-spacing: -0.3px;
+  color: #000000;
+}
+.payment-card__list {
+  padding: 0;
+  margin-left: 16px;
+}
+.payment-card__item + .payment-card__item {
+  margin-top: 8px;
+}
+.payment-card__value {
+  font-weight: 600;
+}
+
+.payment-load__btn {
+  margin-top: 8px;
+}
+
+.indications {
+  padding-bottom: 169px;
+}
+.indications--details {
+  padding-top: 56px;
+}
+.indications__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+  text-align: center;
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
+}
+.indications__title--left {
+  text-align: left;
+}
+.indications__subtitle {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  /* identical to box height, or 160% */
+  /* or 160% */
+  margin-bottom: 24px;
   letter-spacing: -0.3px;
   color: #939393;
+}
+.indications__btn {
+  margin-top: 32px;
 }
 
 /*# sourceMappingURL=styles.css.map */

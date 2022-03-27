@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="indications indications--details">
+    <div class="container">
+      <a onclick="javascript:history.back();" class="section__back-button">
+        <svg class="i-icon i-icon--md">
+          <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
+        </svg>
+      </a>
+      <h2 class="section__title  indications__title indications__title--left">Сдача показаний счетчиков</h2>
+      <div class="indications__form">
+        <form action="" class="indications-form">
+          <div class="indications__input">
+            <div class="garage-field">
+              <input type="text" class="garage-field__input" name="electric" id="indications-form__electric"
+                placeholder=" ">
+              <label for="garage-input-1" class="garage-field__label">Электроэнергия, кВт</label>
+            </div>
+          </div>
+          <div class="indications__input">
+            <div class="garage-field">
+              <input type="text" class="garage-field__input" name="date" id="indications-form__date" placeholder=" ">
+              <label for="garage-input-1" class="garage-field__label">Дата снятия показаний</label>
+            </div>
+          </div>
+          <div class="indications__btn">
+            <button class="garage-button" disabled>
+              <div class="garage-button__caption">Перейти к оплате</div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <nav class="garage-navigation">
+        <ul class="garage-navigation__list">
+          <li class="garage-navigation__item" id="link-home">
+            <a href="/pages/main/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_home"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Главная</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item garage-navigation__item--active" id="link-receipt">
+            <a href="/pages/receipt/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_receipt"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Квитанции</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-cameras">
+            <a href="/pages/camera/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_camera"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Камеры</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-profile">
+            <a href="/pages/profile/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_profile"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Профиль</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>

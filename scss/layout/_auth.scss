@@ -1,9 +1,4 @@
 .auth {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-
     &__content {
         width: 200%;
         display: flex;
@@ -15,25 +10,10 @@
     &__block {
         width: 50%;
     }
-    &__form {
-        margin-bottom: 24px;
-    }
     &__text {
         text-align: center;
     }
-    &__back-button {
-        width: 48px;
-        height: 48px;
-        margin-bottom: 24px;
-        background: #f8f8f8;
-        border-radius: 12px;
-        color: $active-blue;
-        border: none;
-        outline: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
     &__link {
         margin: 0 auto;
         text-align: center;
@@ -119,6 +99,9 @@
     &__input {
         & + & {
             margin-top: 22px;
+        }
+        &:last-child {
+            margin-bottom: 32px;
         }
     }
 }
