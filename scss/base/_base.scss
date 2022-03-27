@@ -3,11 +3,10 @@
 *::before {
 	box-sizing: border-box;
 }
-a{
+a {
 	text-transform: none;
 	text-decoration: none;
 	color: inherit;
-	
 }
 body {
 	padding: 0;
@@ -23,7 +22,9 @@ body {
 		margin-top: 20px;
 	}
 }
-
+hr {
+	width: 100%;
+}
 button {
 	padding: 0;
 	margin: 0;
@@ -48,6 +49,12 @@ h6 {
 	visibility: hidden;
 	z-index: -1;
 	position: absolute;
+}
+.is-empty {
+	pointer-events: none;
+	position: relative;
+	z-index: -1;
+	opacity: 0;
 }
 footer {
 	position: fixed;

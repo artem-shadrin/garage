@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="contacts">
+    <div class="container">
+      <header class="header">
+        <div class="header__link">
+          <a onclick="javascript:history.back();" class="section__back-button">
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <h2 class="section__title contacts__title">Контакты</h2>
+      <div class="contacts__list">
+        <div class="contacts__item">
+          <div class="contact-item" id="contact-item-1">
+            <h6 class="contact-item__status">Председатель кооператива</h6>
+            <h4 class="contact-item__name">Спиридонов Олег Викторович</h4>
+            <div class="contact-item__tel">
+              <div class="garage-field">
+                <div class="contact-item__copy">
+                  <svg class="i-icon i-icon--md">
+                    <use xlink:href="../../icons/sprite.svg#ic_copy"></use>
+                  </svg>
+                </div>
+                <input type="text" class="garage-field__input" value="+7 (000) 000-00-00" name="contact-item-1__tel"
+                  id="contact-item-1__tel" disabled>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__item">
+          <div class="contact-item" id="contact-item-2">
+            <h6 class="contact-item__status">КПП №1</h6>
+            <h4 class="contact-item__name">Олегов Олег Викторович</h4>
+            <div class="contact-item__tel">
+              <div class="garage-field">
+                <div class="contact-item__copy">
+                  <svg class="i-icon i-icon--md">
+                    <use xlink:href="../../icons/sprite.svg#ic_copy"></use>
+                  </svg>
+                </div>
+                <input type="text" class="garage-field__input" value="+7 (000) 000-00-00" name="contact-item-2__tel"
+                  id="contact-item-2__tel" disabled>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="contacts__item">
+          <div class="contact-item" id="contact-item-3">
+            <h6 class="contact-item__status">Охранная служба</h6>
+            <h4 class="contact-item__name">Виктор Викторович</h4>
+            <div class="contact-item__tel">
+              <div class="garage-field">
+                <div class="contact-item__copy">
+                  <svg class="i-icon i-icon--md">
+                    <use xlink:href="../../icons/sprite.svg#ic_copy"></use>
+                  </svg>
+                </div>
+                <input type="text" class="garage-field__input" value="+7 (000) 000-00-00" name="contact-item-3__tel"
+                  id="contact-item-3__tel" disabled>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="contacts__item">
+          <div class="contact-item" id="contact-item-4">
+            <h6 class="contact-item__status">Ответственный за паркинги</h6>
+            <h4 class="contact-item__name">Васильев Василий Григорьевич</h4>
+            <div class="contact-item__tel">
+              <div class="garage-field">
+                <div class="contact-item__copy">
+                  <svg class="i-icon i-icon--md">
+                    <use xlink:href="../../icons/sprite.svg#ic_copy"></use>
+                  </svg>
+                </div>
+                <input type="text" class="garage-field__input" value="+7 (000) 000-00-00" name="contact-item-4__tel"
+                  id="contact-item-4__tel" disabled>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <footer>
+    <div class="container">
+      <nav class="garage-navigation">
+        <ul class="garage-navigation__list">
+          <li class="garage-navigation__item" id="link-home">
+            <a href="/pages/main/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_home"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Главная</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-receipt">
+            <a href="/pages/receipt/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_receipt"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Квитанции</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-cameras">
+            <a href="/pages/camera/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_camera"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Камеры</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item garage-navigation__item--active" id="link-profile">
+            <a href="/pages/profile/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_profile"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Профиль</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>

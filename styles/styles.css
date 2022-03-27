@@ -163,6 +163,10 @@ body {
   margin-top: 20px;
 }
 
+hr {
+  width: 100%;
+}
+
 button {
   padding: 0;
   margin: 0;
@@ -190,6 +194,13 @@ h6 {
   visibility: hidden;
   z-index: -1;
   position: absolute;
+}
+
+.is-empty {
+  pointer-events: none;
+  position: relative;
+  z-index: -1;
+  opacity: 0;
 }
 
 footer {
@@ -821,6 +832,115 @@ footer {
 }
 .profile-data__save-btn {
   margin-top: 32px;
+}
+
+.contacts {
+  padding-top: 56px;
+}
+.contacts__title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.contacts__item {
+  padding-top: 8px;
+}
+.contacts__item + .contacts__item {
+  margin-top: 24px;
+}
+
+.contact-item__status {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  letter-spacing: -0.3px;
+  color: #939393;
+  margin-bottom: 4px;
+}
+.contact-item__name {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.contact-item__tel .garage-field {
+  height: auto;
+}
+.contact-item__copy {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+}
+
+.history {
+  padding-top: 56px;
+}
+.history__item + .history__item {
+  margin-top: 24px;
+}
+
+.history-month__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.history-month__title span {
+  flex: 0 0 auto;
+}
+.history-month__item + .history-month__item {
+  margin-top: 8px;
+}
+
+.history-card {
+  /* Gray 01 */
+  padding: 16px 0;
+  background: #f8f8f8;
+  border-radius: 12px;
+}
+.history-card__title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin: 0 16px;
+}
+.history-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 12px 16px 0px;
+}
+.history-card__field {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  letter-spacing: -0.3px;
+  color: #000000;
+}
+.history-card__value {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  text-align: right;
+  letter-spacing: -0.3px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */
