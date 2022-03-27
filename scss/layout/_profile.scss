@@ -1,0 +1,124 @@
+.profile {
+  padding-top: 72px;
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__menu {
+    margin-bottom: 32px;
+  }
+
+  &__item-menu {
+    & + & {
+      margin-top: 12px;
+    }
+  }
+
+  &__chat {
+    margin-bottom: 112px;
+  }
+
+  &__exit {
+    width: max-content;
+    margin: 0 auto 112px;
+  }
+}
+.chat-block {
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    /* identical to box height, or 145% */
+
+    letter-spacing: -0.3px;
+
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+
+    letter-spacing: -0.3px;
+
+    /* Gray 02 */
+
+    color: $grey-2;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Gray 01 */
+
+    background: $grey-1;
+    border-radius: 12px;
+  }
+}
+.exit-btn {
+  width: 173px;
+  height: 48px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  letter-spacing: -0.3px;
+
+  color: $red;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    margin-bottom: 0;
+  }
+  margin-bottom: 16px;
+}
+
+.profile-data {
+  padding-top: 56px;
+  &__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    /* identical to box height, or 145% */
+
+    letter-spacing: -0.3px;
+
+    color: #000000;
+    margin-bottom: 16px;
+  }
+
+  &__field {
+    & + & {
+      margin-top: 8px;
+    }
+  }
+  &__save-btn {
+    margin-top: 32px;
+  }
+}

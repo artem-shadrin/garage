@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="profile">
+    <div class="container">
+      <h2 class="section__title profile__title">Профиль</h2>
+      <div class="profile__menu">
+        <div class="profile__item-menu">
+          <a href="/pages/profile/data.html" class="garage-setting-button" id="data-profile">
+            <span class="garage-setting-button__label">
+              <svg class="i-icon i-icon--md">
+                <use xlink:href="../../icons/sprite.svg#ic_profilecard"></use>
+              </svg>
+            </span>
+            <span class="garage-setting-button__caption">Мои данные</span>
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#ic_arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="profile__item-menu">
+          <a href="/pages/profile/history.html" class="garage-setting-button" id="history">
+            <span class="garage-setting-button__label">
+              <svg class="i-icon i-icon--md">
+                <use xlink:href="../../icons/sprite.svg#ic_receipt"></use>
+              </svg>
+            </span>
+            <span class="garage-setting-button__caption">История оплат</span>
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#ic_arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="profile__item-menu">
+          <a href="/pages/profile/contacts.html" class="garage-setting-button" id="contacts">
+            <span class="garage-setting-button__label">
+              <svg class="i-icon i-icon--md">
+                <use xlink:href="../../icons/sprite.svg#ic_phone"></use>
+              </svg>
+            </span>
+            <span class="garage-setting-button__caption">Контакты</span>
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#ic_arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="profile__chat">
+        <div class="chat-block">
+          <h4 class="chat-block__title">Чат с председателем</h4>
+          <span class="chat-block__subtitle">Председатель на связи по будним дням, обращайтесь к нему с вопросами</span>
+          <a href="/pages/profile/chat.html" class="chat-block__btn">
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#message"></use>
+            </svg>
+            Перейти в чат
+          </a>
+        </div>
+      </div>
+      <div class="profile__exit">
+        <a class="exit-btn">
+          <svg class="i-icon i-icon--md">
+            <use xlink:href="../../icons/sprite.svg#exit-log-out-arrow"></use>
+          </svg>
+          Выйти из профиля
+
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <nav class="garage-navigation">
+        <ul class="garage-navigation__list">
+          <li class="garage-navigation__item" id="link-home">
+            <a href="/pages/main/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_home"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Главная</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-receipt">
+            <a href="/pages/receipt/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_receipt"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Квитанции</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-cameras">
+            <a href="/pages/camera/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_camera"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Камеры</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item garage-navigation__item--active" id="link-profile">
+            <a href="/pages/profile/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_profile"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Профиль</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>

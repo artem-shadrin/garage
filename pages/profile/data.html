@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="profile-data">
+    <div class="container">
+      <header class="header">
+        <div class="header__link">
+          <a onclick="javascript:history.back();" class="section__back-button">
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__link">
+          <a href="/pages/profile/edit.html" class="section__back-button">
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#pen"></use>
+            </svg>
+          </a>
+        </div>
+      </header>
+      <h2 class="profile-data__title">Профиль</h2>
+      <div class="profile-data__info">
+        <div class="profile-data__field">
+          <div class="garage-field">
+            <input type="text" class="garage-field__input" value="Спиридонов Олег Викторович" name="profile__name"
+              id="profile__name" placeholder=" " disabled>
+            <label for="profile__name" class="garage-field__label">ФИО</label>
+          </div>
+          <div class="garage-field">
+            <input type="text" class="garage-field__input" value="+7 (000) 000-00-00" name="profile__tel"
+              id="profile__tel" placeholder=" " disabled>
+            <label for="profile__tel" class="garage-field__label">Номер телефона</label>
+          </div>
+          <div class="garage-field">
+            <input type="text" class="garage-field__input" value="test@mail.ru" name="profile__email"
+              id="profile__email" placeholder=" " disabled>
+            <label for="profile__email" class="garage-field__label">E-mail</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <nav class="garage-navigation">
+        <ul class="garage-navigation__list">
+          <li class="garage-navigation__item" id="link-home">
+            <a href="/pages/main/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_home"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Главная</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-receipt">
+            <a href="/pages/receipt/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_receipt"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Квитанции</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item" id="link-cameras">
+            <a href="/pages/camera/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_camera"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Камеры</span>
+            </a>
+          </li>
+          <li class="garage-navigation__item garage-navigation__item--active" id="link-profile">
+            <a href="/pages/profile/index.html" class="garage-link">
+              <div class="garage-link__icon">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_profile"></use>
+                </svg>
+              </div>
+              <span class="garage-link__title">Профиль</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="../../js/script.js"></script>
+</body>
+
+</html>

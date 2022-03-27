@@ -717,4 +717,110 @@ footer {
   margin-top: 32px;
 }
 
+.profile {
+  padding-top: 72px;
+}
+.profile__title {
+  margin-bottom: 24px;
+}
+.profile__menu {
+  margin-bottom: 32px;
+}
+.profile__item-menu + .profile__item-menu {
+  margin-top: 12px;
+}
+.profile__chat {
+  margin-bottom: 112px;
+}
+.profile__exit {
+  width: max-content;
+  margin: 0 auto 112px;
+}
+
+.chat-block {
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.chat-block__title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.chat-block__subtitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+  letter-spacing: -0.3px;
+  /* Gray 02 */
+  color: #878787;
+  margin-bottom: 20px;
+}
+.chat-block__btn {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Gray 01 */
+  background: #f8f8f8;
+  border-radius: 12px;
+}
+
+.exit-btn {
+  width: 173px;
+  height: 48px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  letter-spacing: -0.3px;
+  color: #ff0000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.header a {
+  margin-bottom: 0;
+}
+
+.profile-data {
+  padding-top: 56px;
+}
+.profile-data__title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.profile-data__field + .profile-data__field {
+  margin-top: 8px;
+}
+.profile-data__save-btn {
+  margin-top: 32px;
+}
+
 /*# sourceMappingURL=styles.css.map */
