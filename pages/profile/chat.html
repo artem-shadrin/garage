@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="chat">
+    <div class="container">
+      <header class="chat__header">
+        <div class="chat__back">
+          <a onclick="javascript:history.back();" class="section__back-button">
+            <svg class="i-icon i-icon--md">
+              <use xlink:href="../../icons/sprite.svg#ic_arrowback"></use>
+            </svg>
+          </a>
+        </div>
+        <h4 class="chat__title">Председатель</h4>
+      </header>
+      <div class="chat__body">
+        <div class="messages-list">
+
+          <div class="messages-item messages-item--friend">
+            <div class="messages-item__header">
+              <span class="messages-item__friend">Председатель</span>
+            </div>
+            <div class="messages-item__body">
+              <div class="messages-item__message">
+                Если у вас возникли вопросы, напишите в чат.
+                Председатель ответит вам как только освободиться
+              </div>
+            </div>
+            <div class="messages-item__footer">
+              <span class="messages-item__time">15:54</span>
+            </div>
+          </div>
+          <div class="messages-item">
+            <div class="messages-item__header">
+              <span class="messages-item__friend">Я</span>
+            </div>
+            <div class="messages-item__body">
+              <div class="messages-item__message">
+                Как проехать в выходной день на паркинг №1 с северной части кооператива?
+              </div>
+            </div>
+            <div class="messages-item__footer">
+              <div class="messages-item__files">
+                <div class="messages-item__file">Файл IMG_1002321_22</div>
+              </div>
+              <span class="messages-item__time">15:54</span>
+            </div>
+          </div>
+          <div class="messages-item messages-item--friend">
+            <div class="messages-item__header">
+              <span class="messages-item__friend">Председатель</span>
+            </div>
+            <div class="messages-item__body">
+              <div class="messages-item__message">
+                Здравствуйте!
+                В выходной день въезд на паркинг №1 с северной части кооператива закрыт.
+                Приезжайте в будние дни!
+              </div>
+            </div>
+            <div class="messages-item__footer">
+              <div class="messages-item__files">
+                <div class="messages-item__file">Файл IMG_1002321_22</div>
+              </div>
+              <span class="messages-item__time">16:12</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <footer class="chat__footer">
+        <hr>
+        <div class="chat-input">
+          <div class="chat-input__files">
+            <label class="chat-input__file">
+              <span class="chat-input__file-title">Файл IMG_1002321_22&nbsp;</span>
+              <div class="chat-input__file-status">загружен</div>
+              <button class="chat-input__file-delete">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_close"></use>
+                </svg>
+              </button>
+              <input class="chat-input__file-data" type="file" id="chat-file-1" disabled>
+            </label>
+            <label class="chat-input__file">
+              <span class="chat-input__file-title">Файл IMG_1002321_22&nbsp;</span>
+              <div class="chat-input__file-status">загружен</div>
+              <button class="chat-input__file-delete">
+                <svg class="i-icon i-icon--md">
+                  <use xlink:href="../../icons/sprite.svg#ic_close"></use>
+                </svg>
+              </button>
+              <input class="chat-input__file-data" type="file" id="chat-file-1" disabled>
+            </label>
+          </div>
+          <div class="chat-input__body">
+            <div class="chat-input__add-file">
+              <label class="chat-input__file">
+                <span class="chat-input__file-title">
+                  <svg class="i-icon i-icon--md">
+                    <use xlink:href="../../icons/sprite.svg#status"></use>
+                  </svg></span>
+                <input class="chat-input__file-data" type="file" id="chat-file-1" disabled>
+              </label>
+            </div>
+            <div class="chat-input__text">
+              <input type="text">
+            </div>
+            <div class="chat-input__send-btn">
+              <svg class="i-icon i-icon--md">
+                <use xlink:href="../../icons/sprite.svg#send"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+</body>
+
+</html>

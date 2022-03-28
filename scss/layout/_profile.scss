@@ -256,3 +256,206 @@
     color: #000000;
   }
 }
+
+.chat {
+  padding-top: 60px;
+
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    background: #fff;
+  }
+
+  &__back {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height, or 141% */
+
+    text-align: center;
+    letter-spacing: -0.3px;
+  }
+
+  &__body {
+  }
+
+  &__footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.messages-list {
+}
+.messages-item {
+  & + & {
+    margin-top: 16px;
+  }
+  padding: 12px 16px;
+  background: #4e6ee0;
+  border-radius: 12px 0px 12px 12px;
+  &__message {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+    color: #ffffff;
+    letter-spacing: -0.3px;
+    margin-bottom: 4px;
+  }
+
+  &__file {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+
+    /* Active color blue */
+    background: #efefef;
+    border-radius: 12px;
+    padding: 8px;
+    width: max-content;
+    margin-bottom: 6px;
+  }
+
+  &__time {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+
+    /* Active color blue */
+    color: #dbdbdb;
+  }
+  &__friend {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height, or 141% */
+
+    letter-spacing: -0.3px;
+
+    color: #000000;
+    display: none;
+  }
+  &--friend {
+    background: #f8f8f8;
+    border-radius: 0px 12px 12px 12px;
+    .messages-item__friend {
+      display: block;
+    }
+    .messages-item__message {
+      color: #000;
+    }
+    .messages-item__file {
+      color: #2376f2;
+    }
+    .messages-item__time {
+      color: #2376f2;
+    }
+  }
+}
+.chat-input {
+  &__files {
+  }
+
+  &__file {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+
+    color: #000000;
+    padding: 8px;
+    display: flex;
+  }
+
+  &__file-title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+    white-space: nowrap;
+    color: #000000;
+  }
+
+  &__file-status {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+
+    color: #000000;
+  }
+
+  &__file-delete {
+    border: none;
+    background: none;
+  }
+
+  &__file-data {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+
+  &__add-file {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &__text {
+    background: #f4f4f4;
+    border-radius: 24px;
+    padding: 8px 16px 8px 8px;
+    outline: none;
+  }
+
+  &__send-btn {
+    border: none;
+    background: none;
+  }
+}
+.chat-delete {
+  border: none;
+  background: none;
+}
